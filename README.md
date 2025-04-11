@@ -57,14 +57,15 @@ To extract meaningful insights using SQL queries such as:
 
 ---
 
+
 ## SQL Query Analysis :-
 
 
-1. Retrieve all books in the "Fiction" genre
+1. Retrieve all books in the "Fiction" Genre
 ``` sql
 SELECT * FROM books WHERE 'Fiction' = genre;
 
-2. Find books published after 1950
+2. Find books published after 1950**
 
 ```sql
  SELECT * FROM books WHERE published_year > 1950;
