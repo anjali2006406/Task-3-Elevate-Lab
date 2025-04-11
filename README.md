@@ -61,7 +61,6 @@ To extract meaningful insights using SQL queries such as:
 
 
 1. Retrieve all books in the "Fiction" genre
-   
 ``` sql
 SELECT * FROM books WHERE 'Fiction' = genre;
 
