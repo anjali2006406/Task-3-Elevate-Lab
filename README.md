@@ -60,37 +60,46 @@ To extract meaningful insights using SQL queries such as:
 ## SQL Query Analysis :-
 
 1. **Retrieve all books in the "Fiction" genre**
-``` SELECT * FROM books WHERE 'Fiction' = genre;
+``` sql
+SELECT * FROM books WHERE 'Fiction' = genre;
 
 2. **Find books published after 1950**
-``` SELECT * FROM books WHERE published_year > 1950;
+```sql
+ SELECT * FROM books WHERE published_year > 1950;
 
 3. **List all customers from Canada**
-``` SELECT * FROM customers WHERE country = 'Canada';
+```sql
+ SELECT * FROM customers WHERE country = 'Canada';
 
 4 .**Show orders placed in November 2023**
-``` SELECT * FROM orders 
+``` sql
+SELECT * FROM orders 
 WHERE order_date BETWEEN '2023-11-01' AND '2023-11-30';
 
 5 .**Retrieve total stock of books available**
-``` SELECT SUM(stock) AS total_stock FROM books;
+```sql
+ SELECT SUM(stock) AS total_stock FROM books;
 
 6 .**Most expensive book**
-``` SELECT * FROM books ORDER BY price DESC LIMIT 1;
+```sql
+ SELECT * FROM books ORDER BY price DESC LIMIT 1;
 
 7. **Total number of books sold per genre**
-``` SELECT b.genre, SUM(o.quantity) AS total_books_sold 
+```sql
+ SELECT b.genre, SUM(o.quantity) AS total_books_sold 
 FROM orders o 
 JOIN books b ON o.book_id = b.book_id 
 GROUP BY b.genre;
 
 8 . **Average price of books in "Fantasy" genre**
-``` SELECT AVG(price) AS average_price 
+```sql
+ SELECT AVG(price) AS average_price 
 FROM books 
 WHERE genre = 'Fantasy';
 
 9 .**Most frequently ordered book**
-``` SELECT o.book_id, b.title, COUNT(o.order_id) AS order_count 
+```sql
+ SELECT o.book_id, b.title, COUNT(o.order_id) AS order_count 
 FROM orders o 
 JOIN books b ON o.book_id = b.book_id 
 GROUP BY o.book_id, b.title 
@@ -98,13 +107,15 @@ ORDER BY order_count DESC
 LIMIT 1;
 
 10. **Top 3 most expensive books in "Fantasy" genre**
-``` SELECT * FROM books 
+```sql
+ SELECT * FROM books 
 WHERE genre = 'Fantasy' 
 ORDER BY price DESC 
 LIMIT 3;
 
 11 . **Total quantity of books sold by each author**
-``` SELECT b.author, SUM(o.quantity) AS total_books_sold 
+```sql
+ SELECT b.author, SUM(o.quantity) AS total_books_sold 
 FROM orders o 
 JOIN books b ON o.book_id = b.book_id 
 GROUP BY b.author;
