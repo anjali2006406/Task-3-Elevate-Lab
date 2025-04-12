@@ -5,6 +5,7 @@
 ### Q1. Retrieve All Books in the "Fiction" Genre
 
 **Query: Retrieve all books where the genre is "Fiction"**
+
 **Concepts: SELECT, WHERE**
 
 **Input Query:**
