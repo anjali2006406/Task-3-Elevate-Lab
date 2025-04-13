@@ -17,9 +17,9 @@
 ---
 
 ### **Q2. Books Published After 1950**
-> **Query: Find the books published after the year 1950**
+ **Query: Find the books published after the year 1950**
 
-> **Concepts**: SELECT, WHERE, Comparison Operator
+ **Concepts**: SELECT, WHERE, Comparison Operator
 
 **Input Query:**
 -- SELECT * FROM books WHERE published_year > 1950;
@@ -29,15 +29,18 @@
 
 ---
 ### **Q3. Customers from Canada**
-> **Query**: List all the customers from Canada  
-> **Concepts**: SELECT, WHERE
+ **Query: List all the customers from Canada**
+ 
+ **Concepts: SELECT, WHERE**
 
-**Input Query:**
-```sql
--- SELECT * FROM customers WHERE country = 'Canada';
+ **Input Query:**
+ -- SELECT * FROM customers WHERE country = 'Canada';
 
-**Result Output**
-![IMG-20250411-WA0006](https://github.com/user-attachments/assets/6f1261a3-d308-4701-a78f-472f7f603d80)
+ **Result Output**
+ ![IMG-20250411-WA0006](https://github.com/user-attachments/assets/635ff4dd-bc80-41f5-b55e-d2e5b8b56861)
+
+
+
 
 
 
