@@ -37,6 +37,7 @@
  -- SELECT * FROM customers WHERE country = 'Canada';
 
  **Result Output**
+ 
  ![IMG-20250411-WA0006](https://github.com/user-attachments/assets/635ff4dd-bc80-41f5-b55e-d2e5b8b56861)
 
 
