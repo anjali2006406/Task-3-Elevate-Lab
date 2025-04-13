@@ -14,3 +14,30 @@
 **Result Output**
 ![IMG-20250411-WA0007](https://github.com/user-attachments/assets/b2b90043-dd91-45c1-a529-694a6399a4f3)
 
+---
+
+### **Q2. Books Published After 1950**
+> **Query: Find the books published after the year 1950**
+
+> **Concepts**: SELECT, WHERE, Comparison Operator
+
+**Input Query:**
+-- SELECT * FROM books WHERE published_year > 1950;
+
+**Result Output** 
+![IMG-20250411-WA0010](https://github.com/user-attachments/assets/dfc272da-9cde-4eab-be3c-48d8510d91ed)
+
+---
+### **Q3. Customers from Canada**
+> **Query**: List all the customers from Canada  
+> **Concepts**: SELECT, WHERE
+
+**Input Query:**
+```sql
+-- SELECT * FROM customers WHERE country = 'Canada';
+
+**Result Output**
+![IMG-20250411-WA0006](https://github.com/user-attachments/assets/6f1261a3-d308-4701-a78f-472f7f603d80)
+
+
+
