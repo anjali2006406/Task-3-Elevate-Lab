@@ -133,13 +133,13 @@ JOIN books b ON o.book_id = b.book_id
 GROUP BY b.author;
 
 
-###  **Learnings**
+ Learnings
  
 - SQL provides a scalable way to analyze large datasets.
 - Joins and aggregations can uncover real business insights.
 - Practiced filtering, grouping, joins, order by, and subqueries.
 
-###  **Bonus Tips**
+ Bonus Tips
 
 - Use EXPLAIN to optimize slow queries.
 - Index foreign keys like customer_id, order_id, and product_id.
