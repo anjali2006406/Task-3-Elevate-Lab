@@ -7,7 +7,7 @@
 **Concepts: SELECT, WHERE**
 
 **Input Query:**
--- SELECT * FROM books WHERE 'Fiction' = Genre;
+ SELECT * FROM books WHERE 'Fiction' = Genre;
 
 **Result Output**
 
@@ -20,7 +20,7 @@
  **Concepts**: SELECT, WHERE, Comparison Operator
 
 **Input Query:**
--- SELECT * FROM books WHERE published_year > 1950;
+SELECT * FROM books WHERE published_year > 1950;
 
 **Result Output** 
 
@@ -33,7 +33,7 @@
  **Concepts: SELECT, WHERE**
 
  **Input Query:**
- -- SELECT * FROM customers WHERE country = 'Canada';
+  SELECT * FROM customers WHERE country = 'Canada';
 
  **Result Output**
  
@@ -46,7 +46,7 @@
 **Concepts: SELECT, WHERE, BETWEEN, DATE**
 
 **Input Query**
--- SELECT * FROM orders WHERE order_date BETWEEN '2023-11-01' AND '2023-11-30';
+SELECT * FROM orders WHERE order_date BETWEEN '2023-11-01' AND '2023-11-30';
 
 **Result Output**
 
@@ -59,7 +59,7 @@
 **Concepts: SELECT, SUM(), Aggregation**
 
 **Input Query:**
--- SELECT SUM(stock) AS total_stock FROM books;
+ SELECT SUM(stock) AS total_stock FROM books;
 
 **Result Output**
 
@@ -72,7 +72,7 @@
 **Concepts: SELECT, ORDER BY, LIMIT**
 
 **Input Query:**
--- SELECT * FROM books ORDER BY price DESC LIMIT 1;
+ SELECT * FROM books ORDER BY price DESC LIMIT 1;
 
 **Result Output**
 
@@ -85,7 +85,7 @@
 **Concepts:SELECT, JOIN, GROUP BY, SUM()**
 
 **Input Query:**
--- SELECT b.genre, SUM(o.quantity) AS total_books_sold 
+ SELECT b.genre, SUM(o.quantity) AS total_books_sold 
 FROM orders o
 JOIN books b ON o.book_id = b.book_id 
 GROUP BY b.genre;
@@ -101,7 +101,7 @@ GROUP BY b.genre;
 **Concepts:SELECT, WHERE, AVG()**
 
 **Input Query:**
--- SELECT AVG(price) AS Average_price FROM books WHERE Genre = 'Fantasy';
+ SELECT AVG(price) AS Average_price FROM books WHERE Genre = 'Fantasy';
 
 **Result Output**
 
@@ -114,7 +114,7 @@ GROUP BY b.genre;
 **Concepts:SELECT, JOIN, GROUP BY, COUNT(), ORDER BY, LIMIT**
 
 **Input Query:**
--- select o.book_id,b.title,count(o.order_id)as order_count from orders o
+ select o.book_id,b.title,count(o.order_id)as order_count from orders o
 join books b on o.book_id=b.book_id
 group by o. book_id ,b.title order by order_count desc limit 1;
 
@@ -129,8 +129,7 @@ group by o. book_id ,b.title order by order_count desc limit 1;
 **Concepts: SELECT, WHERE, ORDER BY, LIMIT**
 
 **Input Query:**
-
---select * from books where genre = 'Fantasy' order by price desc limit 3;
+select * from books where genre = 'Fantasy' order by price desc limit 3;
 
 **Result Output**
 
@@ -143,7 +142,7 @@ group by o. book_id ,b.title order by order_count desc limit 1;
 **Concepts: SELECT, JOIN, GROUP BY, SUM()**
 
 **Input Query:**
--- select b.author, Sum(O.quantity) as total_books_sold
+ select b.author, Sum(O.quantity) as total_books_sold
 from orders  o 
 join books b on O.book_id = b.book_id group by b.author;
 
