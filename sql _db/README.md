@@ -96,7 +96,7 @@ GROUP BY b.genre;
 
 ---
 
-###**Q8.Find the average price of books in the "Fantancy genre"?**
+### **Q8.Find the average price of books in the "Fantancy genre"?**
 
 **Concepts:SELECT, WHERE, AVG()**
 
@@ -109,7 +109,7 @@ GROUP BY b.genre;
 
 ---
 
-###**Q9.Find the most frequently ordered book?**
+### **Q9.Find the most frequently ordered book?**
 
 **Concepts:SELECT, JOIN, GROUP BY, COUNT(), ORDER BY, LIMIT**
 
@@ -124,7 +124,7 @@ group by o. book_id ,b.title order by order_count desc limit 1;
 
 ---
 
-###**Q10.Show the top 3 most expensive books of 'Fantancy' genre?**
+### **Q10.Show the top 3 most expensive books of 'Fantancy' genre?**
 
 **Concepts: SELECT, WHERE, ORDER BY, LIMIT**
 
@@ -138,7 +138,7 @@ group by o. book_id ,b.title order by order_count desc limit 1;
 
 ---
 
-###**Q11.Retrive the total quantity of books sold by each author ?**
+### **Q11.Retrive the total quantity of books sold by each author ?**
 
 **Concepts: SELECT, JOIN, GROUP BY, SUM()**
 
